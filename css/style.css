@@ -1,2 +1,100 @@
+:root {
+  --primary-tex-color: #2e2f42;
+  --title-tex-color: #434455;
+  --accent-color: #4d5ae5;
+  --color-fone: #ffffff;
+  --color-hover: #404bbf;
+}
 body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-tex-color);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* h Приховані заголовки */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Header */
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-tex-color);
+  text-decoration: none;
+}
+.logo-item {
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.header-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--primary-tex-color);
+}
+.header-item:hover,
+.header-item:focus,
+.address-info:hover,
+.address-info:focus {
+  color: var(--color-hover);
+}
+.address-info,
+.phone {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--title-tex-color);
+}
+/* Section main */
+
+.section-main {
+  background-color: #2e2f42;
+}
+.main-tex {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: var(--color-fone);
+}
+.button {
+  font-family: "Roboto";
+  color: var(--color-fone);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  border-style: none;
+}
+.button:hover,
+.batton:focus {
+  background-color: var(--color-hover);
 }
